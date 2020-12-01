@@ -1,0 +1,145 @@
+class RollUpSystem{
+
+1<@>- * Account accounts;
+
+
+}
+class Account{
+  abstract;
+  fullName; 
+  identificationNumber;
+  personalEmailAddress;
+}
+
+class User{
+username;
+defaulted password = "password";
+Business specifiedBusiness;
+isA Account; 
+ 1 -- * Greenhouse;
+}
+
+class AdminAccount{
+ unique adminUsername;
+  adminPassword; 
+  isA Account;
+}
+
+class Greenhouse{
+  1 <@>- * RollUpSection;
+  1 <@>- 1 ClimateControl;
+  1 <@>- 1 OutdoorConditions;
+}
+
+class ClimateControl{
+}
+
+class OutdoorConditions{
+  windSpeed;
+  temperature;
+  
+}
+
+class RollUpSection{
+  unique SectionNumber ;
+  rollUp;
+  rollDown;
+  Boolean currentPosition;
+  1 -- 1 Arduino;
+}
+
+class Arduino{
+  boardID;
+  input;
+  output;
+  1 -- * Motors;
+  1 -- * Sensors;
+}
+
+class Motors{
+  unique motorID;
+  Boolean currentStatus;
+}
+
+class Sensors{
+  unique sensorID;
+  Boolean currentStatus;
+  
+}
+
+//$?[End_of_model]$?
+
+namespace -;
+
+// Positioning
+
+// @@@skipphpcompile - remove when issue 697 is fixed
+
+class Account
+{
+  position 50 130 109 45;
+}
+
+class RollUpSystem
+{
+  position 50 39 109 41;
+}
+
+class User
+{
+  position 261 337 210 92;
+  position.association RollUp__User 146,92 13,0;
+  position.association Greenhouse__User 210,71 0,30;
+}
+
+class AdminAccount
+{
+  position 9 337 234 75;
+}
+
+class Motors
+{
+  position 278 493 179 75;
+}
+
+class RollUpSection
+{
+  position 762 407 188 92;
+  position.association Motors__RollUpSection 186,92 30,0;
+  position.association Arduino__RollUpSection 0,91 179,18;
+}
+
+class Greenhouse
+{
+  position.association Greenhouse__RollUpSection 109,37 0,8;
+    position.association ClimateControl__Greenhouse 95,0 12,41;
+  position.association Greenhouse__OutdoorConditions 2,0 141,75;
+position 524 378 109 41;
+}
+
+class Greenhouse
+{
+  position 524 378 109 41;
+}
+
+class ClimateControl
+{
+  position 607 262 109 41;
+}
+
+class Arduino
+{
+  position 513 480 179 92;
+  position.association Arduino__Motors 0,20 179,7;
+  position.association Arduino__Sensors 45,92 56,0;
+}
+
+class OutdoorConditions
+{
+  position 385 194 148 58;
+}
+
+class Sensors
+{
+  position 502 614 179 75;
+}

@@ -1,0 +1,71 @@
+namespace rollup.system.model;
+
+class RollUpSystem{
+
+1<@>- * Account accounts;
+
+
+}
+class Account{
+  abstract;
+  fullName; 
+  identificationNumber;
+  personalEmailAddress;
+}
+
+class User{
+username;
+defaulted password = "password";
+Business specifiedBusiness;
+isA Account; 
+ 1 -- * Greenhouse;
+}
+
+class AdminAccount{
+ unique adminUsername;
+  adminPassword; 
+  isA Account;
+}
+
+class Greenhouse{
+  1 <@>- * RollUpSection;
+  1 <@>- 1 ClimateControl;
+  1 <@>- 1 OutdoorConditions;
+}
+
+class ClimateControl{
+}
+
+class OutdoorConditions{
+  windSpeed;
+  temperature;
+  
+}
+
+class RollUpSection{
+  unique sectionNumber ;
+  rollUp;
+  rollDown;
+  Boolean currentPosition;
+  1 -- 1 Arduino;
+}
+
+class Arduino{
+  boardID;
+  input;
+  output;
+  1 -- * Motors;
+  1 -- * Sensors;
+}
+
+class Motors{
+  unique motorID;
+  Boolean currentStatus;
+}
+
+class Sensors{
+  unique sensorID;
+  Boolean currentStatus;
+  
+}
+

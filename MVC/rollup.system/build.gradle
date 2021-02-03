@@ -9,6 +9,8 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'application'
+    id 'java'
 }
 
 repositories {
@@ -16,6 +18,17 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+task custom(type: Jar){
+	manifest {
+		attributes 'Main-Class': 'rollup.system.Main'
+	}
+	//baseName - 'DemoFat'
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }}
+	//with jar
+}
+
+
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -26,4 +39,13 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    
+   	//implementation "de.jensd:fontawesomefx:8.9"
+   	//implementation 'com.lgou2w:ldk-fx-fontawesomefx:0.1.8'
+
+   	
+   	implementation 'de.jensd:fontawesomefx-fontawesome:4.7.0-9.1.2'
+   	
+    implementation 'com.jfoenix:jfoenix:8.0.7'
+
 }

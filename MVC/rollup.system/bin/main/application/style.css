@@ -1,0 +1,69 @@
+#Up1 {
+    -fx-background-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-color: #9cac8b;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#Up1:pressed{
+    -fx-background-color: #f9fcf5;
+    -fx-border-width: 2;
+    -fx-border-color: #9cac8b;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.25), 4, 0.0, 0, 1);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#Up1:active{
+    -fx-background-color: #f9fcf5;
+    -fx-border-width: 2;
+    -fx-border-color: #9cac8b;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.25), 4, 0.0, 0, 1);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#Up1:focused{
+    -fx-background-color: #f9fcf5;
+    -fx-border-width: 2;
+    -fx-border-color: #9cac8b;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.25), 4, 0.0, 0, 1);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#Down1 {
+    -fx-background-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-color: #8a8a8a;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#Down1:pressed{
+    -fx-background-color: #F8F8F8;
+    -fx-border-width: 2;
+    -fx-border-color: #8a8a8a;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.25), 4, 0.0, 0, 1);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#Down1:active{
+    -fx-background-color: #F8F8F8;
+    -fx-border-width: 2;
+    -fx-border-color: #8a8a8a;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.25), 4, 0.0, 0, 1);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#Down1:focused{
+    -fx-background-color: #F8F8F8;
+    -fx-border-width: 2;
+    -fx-border-color: #8a8a8a;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.25), 4, 0.0, 0, 1);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}

@@ -46,6 +46,9 @@ dependencies {
    	
    	implementation 'de.jensd:fontawesomefx-fontawesome:4.7.0-9.1.2'
    	
-    implementation 'com.jfoenix:jfoenix:8.0.7'
+    //implementation 'com.jfoenix:jfoenix:8.0.7'
+    //implementation 'com.jfoenix:jfoenix:9.0.10'
+    implementation 'com.jfoenix:jfoenix:9.0.10'
 
+    
 }

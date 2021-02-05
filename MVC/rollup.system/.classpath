@@ -31,6 +31,26 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ervin/.gradle/caches/modules-2/files-2.1/com.jfoenix/jfoenix/9.0.10/a7625792db8d15615ea6eebbc31e01504f20b2df/jfoenix-9.0.10.jar" sourcepath="C:/Users/ervin/.gradle/caches/modules-2/files-2.1/com.jfoenix/jfoenix/9.0.10/d263470fec5271c6d835892a2069e64d3b36cb4b/jfoenix-9.0.10-sources.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ervin/.gradle/caches/modules-2/files-2.1/de.jensd/fontawesomefx-commons/9.1.2/33eb463c75c8c225eb50c8b30a337c81386c19b2/fontawesomefx-commons-9.1.2.jar" sourcepath="C:/Users/ervin/.gradle/caches/modules-2/files-2.1/de.jensd/fontawesomefx-commons/9.1.2/ef696ac97b5f03be655cbabf9b586a60a206ea4/fontawesomefx-commons-9.1.2-sources.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ervin/.gradle/caches/modules-2/files-2.1/de.jensd/fontawesomefx-fontawesome/4.7.0-9.1.2/7773ab9426179280438f4a8b1d64b3913b0ead92/fontawesomefx-fontawesome-4.7.0-9.1.2.jar" sourcepath="C:/Users/ervin/.gradle/caches/modules-2/files-2.1/de.jensd/fontawesomefx-fontawesome/4.7.0-9.1.2/fd9dc93f944739fe9b78e071adf2e0b8a962c01d/fontawesomefx-fontawesome-4.7.0-9.1.2-sources.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="C:/Users/ervin/Desktop/jSerialComm-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ervin/Desktop/arduino.jar"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>

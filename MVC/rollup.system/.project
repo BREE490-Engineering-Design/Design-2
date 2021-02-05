@@ -6,6 +6,11 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
+			<name>org.eclipse.xtext.ui.shared.xtextBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
@@ -19,5 +24,13 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
+		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>mfz-rxtx-2.2-20081207-win-x64</name>
+			<type>2</type>
+			<location>C:/Users/ervin/Desktop/mfz-rxtx-2.2-20081207-win-x64/mfz-rxtx-2.2-20081207-win-x64</location>
+		</link>
+	</linkedResources>
 </projectDescription>
